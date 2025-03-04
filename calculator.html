@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="calculator.css">
+  <title>JS Calculator</title>
+</head>
+<body>
+<div id ="calculator">
+<input type="text" id="display" readonly>
+
+<div class ="button-container">
+  <button class="clear"  onclick="
+  currectDisplay='';
+  document.querySelector('#display').value=currectDisplay;
+  ">c</button>
+  <button class="button number" onclick="
+  currectDisplay=currectDisplay + '1';
+  document.querySelector('#display').value=currectDisplay;
+  ">1</button>
+  <button class="button number" onclick="
+  currectDisplay=currectDisplay + '2';
+  document.querySelector('#display').value=currectDisplay;
+  ">2</button>
+  <button class="button operator" onclick="
+  currectDisplay=currectDisplay + '+';
+  document.querySelector('#display').value=currectDisplay;
+  ">+</button>
+  <button class="button number" onclick="
+  currectDisplay=currectDisplay + '3';
+  document.querySelector('#display').value=currectDisplay;
+  ">3</button>
+  <button class="button number" onclick="
+  currectDisplay=currectDisplay + '4';
+  document.querySelector('#display').value=currectDisplay;
+  ">4</button>
+  <button class="button operator" onclick="
+  currectDisplay=currectDisplay + '-';
+  document.querySelector('#display').value=currectDisplay;
+  ">-</button>
+  <button class="button number" onclick="
+  currectDisplay=currectDisplay + '5';
+  document.querySelector('#display').value=currectDisplay;
+  ">5</button>
+  <button class="button number" onclick="
+  currectDisplay=currectDisplay + '6';
+  document.querySelector('#display').value=currectDisplay;
+  ">6</button>
+  <button class="button operator" onclick="
+  currectDisplay=currectDisplay + '*';
+  document.querySelector('#display').value=currectDisplay;
+  ">*</button>
+  <button class="button number" onclick="
+  currectDisplay=currectDisplay + '7';
+  document.querySelector('#display').value=currectDisplay;
+  ">7</button>
+  <button class="button number" onclick="
+  currectDisplay=currectDisplay + '8';
+  document.querySelector('#display').value=currectDisplay;
+  ">8</button>
+  <button class="button operator" onclick="
+  currectDisplay=currectDisplay + '/';
+  document.querySelector('#display').value=currectDisplay;
+  ">/</button>
+
+
+  <button class="button equals" onclick="
+  let result =eval(currectDisplay);
+  currectDisplay=result;
+  document.querySelector('#display').value=currectDisplay;
+  ">=</button>
+
+
+  <button class="button number" onclick="
+  currectDisplay=currectDisplay + '9';
+  document.querySelector('#display').value=currectDisplay;
+  ">9</button>
+  <button class="button number"onclick="
+  currectDisplay=currectDisplay + '0';
+  document.querySelector('#display').value=currectDisplay;
+  ">0</button>
+  <button class="button number" onclick="
+  currectDisplay=currectDisplay + '.';
+  document.querySelector('#display').value=currectDisplay;
+  ">.</button>
+
+</div>
+  </div>
+<script>
+  let currectDisplay = '';
+  document.querySelector('#display').value=currectDisplay;
+
+</script>
+</body>
+</html>
